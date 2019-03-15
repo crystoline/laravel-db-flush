@@ -1,0 +1,36 @@
+{
+    "name": "crystoline/laravel-db-flush",
+    "description": "Laravel db flush or reset",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "Db", "Flush", "Reset"],
+    "authors": [
+        {
+            "name": "adekunle adekoya",
+            "email": "crystoline@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "illuminate/support": "^5.5"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Crystoline\\LaravelDbFlush\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Crystoline\\LaravelDbFlush\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Crystoline\\LaravelDbFlush\\DbFlushProvider"
+            ]
+        }
+    }
+}
